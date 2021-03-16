@@ -1,0 +1,43 @@
+.gradient-show{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+}
+
+.row{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.gradient-item{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 20vw;
+    width: 20vw;
+    background-color: #f63e02;
+    -webkit-transition: webkit-tranfsorm 4s;
+    -moz-transition: -moz-transform 4s; 
+    -o-transition: -o-transform 4s;  
+    transition: transform 2s;
+}
+
+.gradient-item:hover{
+    -webkit-transform: rotate(90deg) scale(2,2) skewY(20deg) translate(50px,50px);
+    -moz-transform: rotate(90deg) scale(2, 2) skewY(20deg) translate(50px,50px);
+    -o-transform: rotate(90deg) scale(2, 2) skewY(20deg) translate(50px,50px);  
+    transform: rotate(90deg) scale(2,2) skewY(20deg) translate(50px,50px);
+}
+
+#g1{background-image: linear-gradient(red, yellow);}
+#g2{background-image: linear-gradient(red, yellow, hsl(180,100%,50%));}
+#g3{background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1));}
+#g4{ background-image: radial-gradient(red, yellow);}
+#g5{background-image: radial-gradient(circle, red, yellow);}
+#g6{background-image: repeating-radial-gradient(red, yellow 10%);}

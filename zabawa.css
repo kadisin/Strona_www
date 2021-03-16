@@ -1,0 +1,82 @@
+#zdj{
+    position: relative;
+
+
+}
+
+#zdj:hover{
+    -webkit-animation: movingImg linear 5s 2;
+    -moz-animation: movingImg linear 5s 2;
+    animation: movingImg linear 5s 2;
+}
+
+@-webkit-keyframes movingImg{
+                                          
+    0%   {left: 0px;}  
+    25%  {left: 100px;}  
+    50%  {left: 0px; }
+    75%  {left: -100px;}
+    100% {left: 0px; }  
+
+}
+
+@-moz-keyframes movingImg{
+                                          
+    0%   {left: 0px;}  
+    25%  {left: 100px;}  
+    50%  {left: 0px; }
+    75%  {left: -100px;}
+    100% {left: 0px; }  
+}
+
+@keyframes movingImg{
+                                          
+    0%   {left: 0px;}  
+    25%  {left: 100px;}  
+    50%  {left: 0px; }
+    75%  {left: -100px;}
+    100% {left: 0px; }  
+
+}
+
+
+.flexbox{
+    width: 720px;
+    height: 480px;
+    margin: auto;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+}
+
+.flexbox>div>img{
+    width: 70%;
+    height: auto;
+}
+
+.flexbox > div{ 
+    background-color: white; 
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    border-radius: 10px;
+    border: 1px solid #f63e02;
+    width: 120px;
+    margin: 10px -10px 10px 0px;
+    padding:  20px;
+    box-shadow: 10px 10px 10px dimgray;
+    overflow: hidden;
+}
+
+.flexbox > div:hover{
+    width: 200px;
+    color: white;
+    background-color: #f63e02;
+}
+#przywitanie
+{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+

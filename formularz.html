@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Myszojelen!</title>
+        <meta name="description" content="Strona poświecona Myszo-Jelenią">
+        <meta name="author" content="Mateusz Majdowski i Tomek Łogisz">
+        <!--SŁOWA KLUCZOWE-->
+        <meta name="keywords" content = "Zwierzęta, myszo-jeleń">
+        <!--USTAWIONE WYSWIETLANIE STRONY -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--PLIK CSS-->
+        <link rel="stylesheet" href="formularz.css" type="text/css" />
+        <link rel="stylesheet" href="main.css" type="text/css" />
+    </head>
+    <body>
+
+        <header>
+            <a href="index.html"><img src = "img/Logo.png" alt = "Logo" /></a>
+            <h1>Myszojeleń!</h1>
+         </header>
+
+         <div id = "nawigacja"> 
+            <nav>
+                <ul>
+                    <li><a href="zabawa.html" class="header-link"> Zabawa </a></li>
+                    <li><a href="formularz.html" class="header-link"> Wspomóż Nas </a></li>
+                    <li><a href="gradienty.html" class="header-link"> gradienty </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+         <!--FORMULARZ DO UZUPELNIENIA-->
+         <form id="form1" method="post" action="index.html">
+            <h2>Wypełnij formularz</h2>
+             <!--UKRYTE POLA-->
+             <input type = "hidden" name = "recipient" value = "mail@mail.com">
+             <input type = "hidden" name = "subject" value = "Feedback Form">
+             <input type = "hidden" name = "redirect" value = "main.html">
+             <!--/UKRYTE POLA-->
+ 
+             <!--POLE IMIE-->
+             <p><label>Imie:                                     
+                 <input name = "imie" type = "text" size = "25" maxlength = "30" autocomplete="on" placeholder = "Jan"  autofocus>                          
+                 </label>
+             </p>
+             <!--/POLE IMIE-->
+ 
+             <!--POLE NAZWISKO-->
+             <p><label>Nazwisko:                                     
+                 <input name = "nazwisko" id ="nazwisko" type = "text" size = "25" maxlength = "30" placeholder = "Kowalski" autocomplete="on" required>                          
+                 </label>
+             </p>
+             <!--/POLE NAZWISKO-->
+ 
+             <!--POLE EMAIL-->
+             <p>
+                 <label>Adres E-mail:
+                     <input type = "email" id="email"  size = "25" placeholder = "name@domain.com" autocomplete="on" required>
+                 </label>
+             </p> 
+             <!--/POLE EMAIL-->
+
+            <!--POLE EMAIL-->
+             <p>
+                 <label>Numer telefonu:
+                     <input type = "tel" id="tel"  size = "25" placeholder = "#########" pattern = "\d{9}" autocomplete="on">
+                 </label>
+             </p> 
+            <!--/POLE EMAIL--> 
+ 
+            <!--MIESIAC URODZENIA-->
+            <p><label for = "miesiac">Miesiąc urodzenia:
+                <input type = "text" id = "miesiac" placeholder = "Wybierz miesiąc" list = "miesiące" />
+                 <datalist id = "miesiące">       
+                    <option value = "Styczeń">  
+                    <option value = "Luty"> 
+                    <option value = "Marzec">    
+                    <option value = "Kwiecień">    
+                    <option value = "Maj">      
+                    <option value = "Czerwiec">     
+                    <option value = "Lipiec">     
+                    <option value = "Sierpień">   
+                    <option value = "Wrzesień">
+                    <option value = "Październik">  
+                    <option value = "Listopad"> 
+                    <option value = "Grudzień"> 
+                 </datalist>
+                </label>
+            </p> 
+            <!--/MIESIAC URODZENIA-->
+
+
+             <!--RADIO BOXES-->
+             <p>
+                 <strong>Kwota jaka chcesz przeznaczyc : </strong><br> 
+                 <label>
+                     <input name="kwota" type="radio" value="10">10zł 
+                 </label>
+                 <label>
+                     <input name="kwota" type="radio" value="20">20zł 
+                 </label>
+                 <label>
+                     <input name="kwota" type="radio" value="50">50zł 
+                 </label>
+                 <label>
+                     <input name="kwota" type="radio" value="100">100zł 
+                 </label>
+             </p>
+
+             <!--/RADIO BOXES-->
+ 
+             <!--CHECK BOXES-->
+             <p>
+                 <strong>Jakiego Myszo-jelenia chcesz wesprzeć: </strong><br> 
+                 <label>
+                     <input name="imie" type="checkbox" value="Tomek">Tomek
+                 </label>
+                 <label>
+                     <input name="imie" type="checkbox" value="Zosia">Zosia
+                 </label>
+                 <label>
+                     <input name="imie" type="checkbox" value="Janek">Janek
+                 </label>
+                 <label>
+                     <input name="imie" type="checkbox" value="Ola">Ola
+                 </label>
+             </p>
+             <!--/CHECK BOXES-->
+ 
+             <!--DROPDOWN SELECT-->
+             <p>
+                 <label>Jak bardzo lubisz Myszo-jelenie?
+                     <select name="lubie">
+                         <optgroup label="lubie">
+                         <option selected> Bardzo </option>
+                         <option>Mocno</option>
+                         <option>Ciut ciut</option>
+                         </optgroup>
+                         <optgroup label="nie lubie">
+                         <option>Ani trochę</option>
+                         <option>Nie cierpie</option>
+                         </optgroup>
+                     </select>
+                 </label>
+             </p>
+             <!--/DROPDOWN SELECT-->
+ 
+             <!--POLE TEKSTOWE-->
+             <p>
+                 <label> Dodatkowa wiadomość : <br>
+                     <textarea name="msg" rows="4" cols="35" maxlength="200">Wpisz widomość</textarea>
+                 </label>
+             </p>
+             <!--/POLE TEKSTOWE-->
+ 
+             <!--PRZYCISKI-->
+             <p>
+                 <input type = "submit" value = "Submit" id="popup">
+                 <input type = "reset" value = "Clear">  
+             </p>
+             <!--/PRZYCISKI-->
+         </form>
+         <!--/FORMULARZ DO UZUPELNIENIA-->
+
+    </body>
+</html>

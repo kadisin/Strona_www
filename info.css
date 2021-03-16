@@ -1,0 +1,97 @@
+h1
+{
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: grey;
+
+    border-bottom-width: 5px;
+    border-bottom-style: dashed;
+    border-bottom-color: black;
+
+    border-left-style: dotted;
+    border-right-style: dotted;
+
+    font-size: 40px;
+    text-align: center;
+
+
+}
+thead
+{
+    border: 1px solid pack;
+    padding: 5px;
+    background-color: #ffc;
+}
+tbody
+{
+    padding: 10px;
+    background-color: #ffd;
+}
+tfoot
+{
+    border: 1px solid pack;
+    padding: 5px;
+    background-color: #ffc;
+}
+th.zdjecie
+{
+    background-color: orange;
+    font-weight: bold;
+    
+}
+#zdjecie_myszojelen
+{
+    text-align: center;
+
+}
+#ciekawostki_myszojelen
+{
+    text-align: left;
+    float: left;
+    min-height: 150px;
+    margin-left: 10%;
+    margin-right: 20px;
+}
+#tabela
+{
+    float: right;
+    min-height: 150px;
+    margin-left: 20px;
+    margin-right: 10%;
+}
+#footer
+{
+    padding: 50px;
+    clear: both;
+    text-align: center;
+}
+#opis_myszojelen
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+body
+{
+    background-color:  #edc940;
+}
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .button:hover {background-color: #3e8e41}
+
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }  
